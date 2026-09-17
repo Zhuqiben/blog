@@ -133,7 +133,7 @@
     };
     const languageButton = document.querySelector(".language-toggle");
     const savedLanguage = localStorage.getItem("blog-language");
-    let language = savedLanguage === "en" ? "en" : "zh";
+    let language = savedLanguage === "zh" ? "zh" : "en";
     function applyLanguage(nextLanguage) {
       language = nextLanguage;
       document.documentElement.lang = language === "en" ? "en" : "zh-CN";
