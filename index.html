@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="soo 的个人博客，记录计算机视觉、深度学习与机器人技术实践。">
+  <meta name="description" content="soo 的个人博客，记录机器人感知、计算机视觉、深度学习与嵌入式部署实践。">
   <title>soo · 个人博客</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
       <div class="hero-copy">
         <p class="eyebrow">HELLO, WORLD</p>
         <h1 data-i18n="hero.title">用代码记录<br><span>每一次探索。</span></h1>
-        <p class="hero-text" data-i18n="hero.description">你好，我是 soo，一名专注于计算机视觉、深度学习、自动驾驶与机器人技术的开发者。这里记录我的技术实践、学习笔记和正在构建的项目。</p>
+        <p class="hero-text" data-i18n="hero.description">你好，我是 soo，一名专注于机器人感知、计算机视觉、深度学习与嵌入式部署的开发者。这里记录我的技术实践、学习笔记和正在构建的项目。</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#posts"><span data-i18n="hero.read">阅读文章</span> <span>↓</span></a>
           <a class="button button-secondary" href="https://github.com/Zhuqiben" target="_blank" rel="noreferrer"><span data-i18n="hero.github">查看 GitHub</span> <span>↗</span></a>
@@ -54,7 +54,7 @@
       <div class="about-grid">
         <p class="lead" data-i18n="about.lead">我相信，好的技术不仅要解决问题，也应该让复杂的事情变得清晰、简单且可持续。</p>
         <div class="about-details">
-          <p data-i18n="about.description">目前专注于 <strong>计算机视觉、深度学习、自动驾驶与机器人技术</strong>，喜欢把遇到的问题整理成文章，也喜欢通过开源项目与更多人交流。</p>
+          <p data-i18n="about.description">目前专注于 <strong>机器人感知、计算机视觉、深度学习与嵌入式部署</strong>，关注从仿真到真机的完整落地。教育背景：东莞理工学院 · 机电工程（2021.09–2025.06）。</p>
           <div class="tags"><span data-i18n="tags.vision">计算机视觉</span><span data-i18n="tags.deepLearning">深度学习</span><span data-i18n="tags.robotics">机器人技术</span></div>
         </div>
       </div>
@@ -86,8 +86,8 @@
         <a class="text-link" href="https://github.com/Zhuqiben?tab=repositories" target="_blank" rel="noreferrer" data-i18n="projects.all">GitHub 上查看更多 ↗</a>
       </div>
       <div class="project-grid">
-        <a class="project-card" href="https://github.com/Zhuqiben/lane_driving" target="_blank" rel="noreferrer"><span class="project-icon">01</span><h3>lane_driving</h3><p data-i18n="project.1">车道线驾驶相关项目。</p><span class="project-tech">Python</span></a>
-        <a class="project-card" href="https://github.com/Zhuqiben/pytorch_mpiigaze" target="_blank" rel="noreferrer"><span class="project-icon">02</span><h3>pytorch_mpiigaze</h3><p data-i18n="project.2">MPIIGaze 与 MPIIFaceGaze 的非官方 PyTorch 实现。</p><span class="project-tech">Python · PyTorch</span></a>
+        <a class="project-card" href="https://github.com/Zhuqiben/lane_driving" target="_blank" rel="noreferrer"><span class="project-icon">01</span><h3>lane_driving</h3><p data-i18n="project.1">以 YOLO 为核心，在 Webots 中实现动态目标检测与跟踪。</p><span class="project-tech">Python · YOLO · ROS</span></a>
+        <a class="project-card" href="https://github.com/Zhuqiben/pytorch_mpiigaze" target="_blank" rel="noreferrer"><span class="project-icon">02</span><h3>pytorch_mpiigaze</h3><p data-i18n="project.2">视线追踪实现，可延伸至驾驶员监控与人机交互场景。</p><span class="project-tech">Python · PyTorch</span></a>
         <a class="project-card" href="https://www.kaggle.com/qibensu" target="_blank" rel="noreferrer"><span class="project-icon">03</span><h3 data-i18n="project.kaggle.title">Kaggle</h3><p data-i18n="project.kaggle.description">查看我的数据科学与机器学习实践。</p><span class="project-tech">Kaggle</span></a>
         <a class="project-card" href="https://github.com/Zhuqiben?tab=repositories" target="_blank" rel="noreferrer"><span class="project-icon">04</span><h3 data-i18n="project.more.title">更多项目</h3><p data-i18n="project.more.description">在 GitHub 仓库列表中查看全部公开项目。</p><span class="project-tech">GitHub</span></a>
       </div>
@@ -110,26 +110,26 @@
     const translations = {
       zh: {
         "nav.about": "关于我", "nav.posts": "文章", "nav.projects": "项目", "nav.contact": "联系",
-        "hero.title": "用代码记录<br><span>每一次探索。</span>", "hero.description": "你好，我是 soo，一名专注于计算机视觉、深度学习、自动驾驶与机器人技术的开发者。这里记录我的技术实践、学习笔记和正在构建的项目。",
+        "hero.title": "用代码记录<br><span>每一次探索。</span>", "hero.description": "你好，我是 soo，一名专注于机器人感知、计算机视觉、深度学习与嵌入式部署的开发者。这里记录我的技术实践、学习笔记和正在构建的项目。",
         "hero.read": "阅读文章", "hero.github": "查看 GitHub", "card.value": "Building useful things<br>and learning every day.", "card.status": "Available for collaboration",
-        "about.heading": "关于我", "about.lead": "我相信，好的技术不仅要解决问题，也应该让复杂的事情变得清晰、简单且可持续。", "about.description": "目前专注于 <strong>计算机视觉、深度学习、自动驾驶与机器人技术</strong>，喜欢把遇到的问题整理成文章，也喜欢通过开源项目与更多人交流。",
+        "about.heading": "关于我", "about.lead": "我相信，好的技术不仅要解决问题，也应该让复杂的事情变得清晰、简单且可持续。", "about.description": "目前专注于 <strong>机器人感知、计算机视觉、深度学习与嵌入式部署</strong>，关注从仿真到真机的完整落地。教育背景：东莞理工学院 · 机电工程（2021.09–2025.06）。",
         "tags.vision": "计算机视觉", "tags.deepLearning": "深度学习", "tags.robotics": "机器人技术", "posts.heading": "最近文章", "posts.all": "查看全部文章 ↗",
         "post.1.meta": "2026.09.17 · 技术实践", "post.1.title": "从一个想法到可运行的项目", "post.1.description": "记录项目搭建过程中的思考、选择与收获。",
         "post.2.meta": "2026.09.10 · 学习笔记", "post.2.title": "如何建立自己的知识管理系统", "post.2.description": "让零散的学习记录真正沉淀为可复用的知识。",
         "post.3.meta": "2026.09.03 · 随笔", "post.3.title": "保持好奇，持续构建", "post.3.description": "关于学习、创造，以及长期主义的一点思考。",
-        "projects.heading": "精选项目", "projects.all": "GitHub 上查看更多 ↗", "project.1": "车道线驾驶相关项目。", "project.2": "MPIIGaze 与 MPIIFaceGaze 的非官方 PyTorch 实现。",
+        "projects.heading": "精选项目", "projects.all": "GitHub 上查看更多 ↗", "project.1": "以 YOLO 为核心，在 Webots 中实现动态目标检测与跟踪。", "project.2": "视线追踪实现，可延伸至驾驶员监控与人机交互场景。",
         "project.more.title": "更多项目", "project.more.description": "在 GitHub 仓库列表中查看全部公开项目。", "project.kaggle.title": "Kaggle", "project.kaggle.description": "查看我的数据科学与机器学习实践。", "contact.heading": "一起做点有趣的事？", "contact.description": "如果你想交流技术、分享想法，或者一起做一个项目，欢迎联系我。", "contact.button": "联系我 ↗", "contact.kaggle": "访问我的 Kaggle ↗", "footer.tagline": "Built with curiosity & code."
       },
       en: {
         "nav.about": "About", "nav.posts": "Notes", "nav.projects": "Projects", "nav.contact": "Contact",
         "hero.title": "Documenting<br><span>every exploration.</span>", "hero.description": "Hi, I'm soo, a developer focused on computer vision, deep learning, autonomous driving, and robotics. This is where I share my technical practice, notes, and projects.",
         "hero.read": "Read notes", "hero.github": "View GitHub", "card.value": "Building useful things<br>and learning every day.", "card.status": "Available for collaboration",
-        "about.heading": "About me", "about.lead": "I believe good technology should not only solve problems, but also make complex things clear, simple, and sustainable.", "about.description": "I focus on <strong>computer vision, deep learning, autonomous driving, and robotics</strong>. I enjoy turning problems into notes and connecting with people through open source.",
+        "about.heading": "About me", "about.lead": "I believe good technology should not only solve problems, but also make complex things clear, simple, and sustainable.", "about.description": "I focus on <strong>robot perception, computer vision, deep learning, and edge deployment</strong>, with an interest in taking systems from simulation to real robots. Education: Dongguan University of Technology · Mechanical and Electrical Engineering (2021.09–2025.06).",
         "tags.vision": "Computer Vision", "tags.deepLearning": "Deep Learning", "tags.robotics": "Robotics", "posts.heading": "Recent notes", "posts.all": "View all notes ↗",
         "post.1.meta": "2026.09.17 · Practice", "post.1.title": "From an idea to a working project", "post.1.description": "Thoughts, choices, and lessons from building a project.",
         "post.2.meta": "2026.09.10 · Learning", "post.2.title": "How to build your own knowledge system", "post.2.description": "Turning scattered notes into reusable knowledge.",
         "post.3.meta": "2026.09.03 · Thoughts", "post.3.title": "Stay curious, keep building", "post.3.description": "A few thoughts on learning, creating, and playing the long game.",
-        "projects.heading": "Selected projects", "projects.all": "See more on GitHub ↗", "project.1": "A project related to lane driving.", "project.2": "An unofficial PyTorch implementation of MPIIGaze and MPIIFaceGaze.",
+        "projects.heading": "Selected projects", "projects.all": "See more on GitHub ↗", "project.1": "Real-time object detection and tracking with YOLO in Webots.", "project.2": "A gaze-tracking implementation applicable to driver monitoring and human-robot interaction.",
         "project.more.title": "More projects", "project.more.description": "Explore all public repositories on GitHub.", "project.kaggle.title": "Kaggle", "project.kaggle.description": "Explore my data science and machine learning practice.", "contact.heading": "Want to build something fun?", "contact.description": "For technical conversations, ideas, or collaboration, feel free to reach out.", "contact.button": "Get in touch ↗", "contact.kaggle": "Visit my Kaggle ↗", "footer.tagline": "Built with curiosity & code."
       }
     };
@@ -141,8 +141,8 @@
       document.documentElement.lang = language === "en" ? "en" : "zh-CN";
       document.title = language === "en" ? "soo · Personal Blog" : "soo · 个人博客";
       document.querySelector('meta[name="description"]').content = language === "en"
-        ? "soo's blog about computer vision, deep learning, and robotics."
-        : "soo 的个人博客，记录计算机视觉、深度学习与机器人技术实践。";
+        ? "soo's blog about robot perception, computer vision, deep learning, and edge deployment."
+        : "soo 的个人博客，记录机器人感知、计算机视觉、深度学习与嵌入式部署实践。";
       document.querySelectorAll("[data-i18n]").forEach((element) => {
         element.innerHTML = translations[language][element.dataset.i18n];
       });
