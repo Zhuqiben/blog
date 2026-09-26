@@ -30,9 +30,9 @@
 
 | 项目 | 简介 | 技术 |
 | --- | --- | --- |
-| [lane_driving](https://github.com/Zhuqiben/lane_driving) | 车道线驾驶相关项目 | `Python` |
-| [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | MPIIGaze 与 MPIIFaceGaze 的非官方 PyTorch 实现 | `Python` `PyTorch` |
 | [Gaze-DMS](https://github.com/Zhuqiben/Gaze-DMS) | 驾驶员监控系统：视线估计 + YOLO 行为检测与疲劳分析，含完整训练教程 | `Python` `PyTorch` `ONNX` |
+| [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | MPIIGaze 与 MPIIFaceGaze 的非官方 PyTorch 实现 | `Python` `PyTorch` |
+| [lane_driving](https://github.com/Zhuqiben/lane_driving) | 车道线驾驶相关项目 | `Python` |
 
 ## 最近文章
 
