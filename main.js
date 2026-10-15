@@ -26,7 +26,7 @@ const translations = {
   en: {
     "nav.about": "About", "nav.posts": "Notes", "nav.projects": "Projects", "nav.contact": "Contact",
     "hero.title": "Documenting<br><span>every exploration.</span>",
-    "hero.description": "Hi, I'm soo, a developer focused on computer vision, deep learning, autonomous driving, and robotics. This is where I share my technical practice, notes, and projects.",
+    "hero.description": "Hi, I'm soo, a developer focused on robot perception, computer vision, deep learning, and edge deployment. This is where I share my technical practice, notes, and projects.",
     "hero.read": "Read notes", "hero.github": "View GitHub",
     "card.value": "Building useful things<br>and learning every day.",
     "card.status": "Available for collaboration",

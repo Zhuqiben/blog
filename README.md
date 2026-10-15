@@ -2,7 +2,7 @@
 
 # 你好，我是 soo 👋
 
-### 开发者 · 技术写作者 · 终身学习者
+### 机器人感知算法工程师 · 技术写作者 · 终身学习者
 
 记录技术实践，分享学习心得，持续构建有价值的作品。
 
@@ -14,8 +14,9 @@
 
 ## 关于我
 
-- 🔭 正在专注于：计算机视觉、深度学习与自动驾驶相关项目
-- 🌱 正在学习：Python、PyTorch 与机器人技术
+- 🔭 正在专注于：机器人感知、计算机视觉与嵌入式部署
+- 🌱 技术方向：ROS 1 / ROS 2、PyTorch、OpenCV、Jetson Nano 边缘部署
+- 🐙 GitHub 主页：[@Zhuqiben](https://github.com/Zhuqiben)
 - 📝 文章主页：[我的博客](./index.html)
 - 💬 欢迎交流：技术实践、开源项目与开发经验
 
@@ -36,14 +37,13 @@
 
 ## 最近文章
 
-- [文章标题一](#) —— 简要介绍文章内容
-- [文章标题二](#) —— 简要介绍文章内容
-- [文章标题三](#) —— 简要介绍文章内容
+文章列表见博客站点的[最近文章](https://zhuqiben.github.io/blog/#posts)区域。
 
 ## 联系我
 
 - GitHub：[@Zhuqiben](https://github.com/Zhuqiben)
-- 联系方式：请通过 [GitHub](https://github.com/Zhuqiben) 联系我
+- 邮箱：[zhuqibensu@proton.me](mailto:zhuqibensu@proton.me)
+- 博客：[zhuqiben.github.io/blog](https://zhuqiben.github.io/blog/)
 
 <div align="center">
 
