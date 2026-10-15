@@ -6,7 +6,7 @@
 
 记录技术实践，分享学习心得，持续构建有价值的作品。
 
-[访问我的博客](./index.html) · [查看项目](#精选项目) · [荣誉与竞赛](#荣誉与竞赛) · [联系我](#联系我)
+[访问我的博客](https://zhuqiben.github.io/blog/) · [精选项目](https://zhuqiben.github.io/blog/#projects) · [荣誉与竞赛](https://zhuqiben.github.io/blog/#honors) · [联系方式](https://zhuqiben.github.io/blog/#contact)
 
 </div>
 
