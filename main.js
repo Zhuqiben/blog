@@ -6,39 +6,41 @@
 // 静态区块的中英文案（key 与 HTML 中的 data-i18n 属性一一对应）
 const translations = {
   zh: {
-    "nav.about": "关于我", "nav.posts": "文章", "nav.projects": "项目", "nav.contact": "联系",
+    "nav.about": "关于我", "nav.posts": "动态", "nav.projects": "项目", "nav.honors": "荣誉", "nav.contact": "联系",
     "hero.title": "用代码记录<br><span>每一次探索。</span>",
     "hero.description": "你好，我是 soo，一名专注于机器人感知、计算机视觉、深度学习与嵌入式部署的开发者。这里记录我的技术实践、学习笔记和正在构建的项目。",
-    "hero.read": "阅读文章", "hero.github": "查看 GitHub",
+    "hero.read": "查看动态", "hero.github": "查看 GitHub",
     "card.value": "Building useful things<br>and learning every day.",
     "card.status": "Available for collaboration",
     "about.heading": "关于我",
     "about.lead": "我相信，好的技术不仅要解决问题，也应该让复杂的事情变得清晰、简单且可持续。",
     "about.description": "目前专注于 <strong>机器人感知、计算机视觉、深度学习与嵌入式部署</strong>，关注从仿真到真机的完整落地。<br><br>教育背景：东莞理工学院 · 机电工程（2021.09–2025.06）。",
     "tags.vision": "计算机视觉", "tags.deepLearning": "深度学习", "tags.robotics": "机器人技术",
-    "posts.heading": "最近文章", "posts.all": "查看全部文章 ↗",
+    "posts.heading": "近期动态", "posts.all": "在 GitHub 查看全部 ↗",
     "projects.heading": "精选项目", "projects.all": "GitHub 上查看更多 ↗",
+    "honors.heading": "荣誉与竞赛",
     "contact.heading": "一起做点有趣的事？",
     "contact.description": "如果你想交流技术、分享想法，或者一起做一个项目，欢迎联系我。",
-    "contact.button": "联系我 ↗", "contact.kaggle": "访问我的 Kaggle ↗",
+    "contact.button": "联系我 ↗", "contact.github": "GitHub ↗", "contact.kaggle": "Kaggle ↗",
     "footer.tagline": "Built with curiosity & code."
   },
   en: {
-    "nav.about": "About", "nav.posts": "Notes", "nav.projects": "Projects", "nav.contact": "Contact",
+    "nav.about": "About", "nav.posts": "Updates", "nav.projects": "Projects", "nav.honors": "Honors", "nav.contact": "Contact",
     "hero.title": "Documenting<br><span>every exploration.</span>",
     "hero.description": "Hi, I'm soo, a developer focused on robot perception, computer vision, deep learning, and edge deployment. This is where I share my technical practice, notes, and projects.",
-    "hero.read": "Read notes", "hero.github": "View GitHub",
+    "hero.read": "View updates", "hero.github": "View GitHub",
     "card.value": "Building useful things<br>and learning every day.",
     "card.status": "Available for collaboration",
     "about.heading": "About me",
     "about.lead": "I believe good technology should not only solve problems, but also make complex things clear, simple, and sustainable.",
     "about.description": "I focus on <strong>robot perception, computer vision, deep learning, and edge deployment</strong>, with an interest in taking systems from simulation to real robots.<br><br>Education: Dongguan University of Technology · Mechanical and Electrical Engineering (2021.09–2025.06).",
     "tags.vision": "Computer Vision", "tags.deepLearning": "Deep Learning", "tags.robotics": "Robotics",
-    "posts.heading": "Recent notes", "posts.all": "View all notes ↗",
+    "posts.heading": "Recent updates", "posts.all": "See all on GitHub ↗",
     "projects.heading": "Selected projects", "projects.all": "See more on GitHub ↗",
+    "honors.heading": "Honors & competitions",
     "contact.heading": "Want to build something fun?",
     "contact.description": "For technical conversations, ideas, or collaboration, feel free to reach out.",
-    "contact.button": "Get in touch ↗", "contact.kaggle": "Visit my Kaggle ↗",
+    "contact.button": "Get in touch ↗", "contact.github": "GitHub ↗", "contact.kaggle": "Kaggle ↗",
     "footer.tagline": "Built with curiosity & code."
   }
 };
@@ -72,7 +74,7 @@ function renderPosts() {
   const html = POSTS
     .filter((post) => !post.hidden)
     .map((post, index) => `
-      <a class="post" href="${post.link}">
+      <a class="post" href="${post.link}" target="_blank" rel="noreferrer">
         <span class="post-number">${String(index + 1).padStart(2, "0")}</span>
         <div>
           <p class="post-meta">${pick(post.meta, language)}</p>
@@ -83,6 +85,20 @@ function renderPosts() {
       </a>`)
     .join("");
   document.getElementById("post-list").innerHTML = html;
+}
+
+// 荣誉列表：渲染顺序 = data.js 中 HONORS 数组的顺序
+function renderHonors() {
+  const html = HONORS
+    .filter((honor) => !honor.hidden)
+    .map((honor) => {
+      const label = `<span class="honor-year">${honor.year}</span><span>${pick(honor.title, language)}</span>`;
+      return honor.link
+        ? `<li><a class="honor-item" href="${honor.link}" target="_blank" rel="noreferrer">${label}<span class="arrow">↗</span></a></li>`
+        : `<li><span class="honor-item">${label}</span></li>`;
+    })
+    .join("");
+  document.getElementById("honor-list").innerHTML = html;
 }
 
 function applyLanguage(nextLanguage) {
@@ -97,6 +113,7 @@ function applyLanguage(nextLanguage) {
   });
   renderProjects();
   renderPosts();
+  renderHonors();
   languageButton.textContent = language === "en" ? "中" : "EN";
   languageButton.setAttribute("aria-label", language === "en" ? "Switch to Chinese" : "切换到英文");
   localStorage.setItem("blog-language", language);

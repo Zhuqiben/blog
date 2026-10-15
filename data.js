@@ -78,28 +78,50 @@ const PROJECTS = [
 ];
 
 // ------------------------------------------------------------
-//  文章列表：新增 / 排序 / hidden 规则与 PROJECTS 完全相同
+//  动态列表：新增 / 排序 / hidden 规则与 PROJECTS 完全相同
+//  每一条都对应真实提交，link 指向对应仓库，请勿填写未发布的内容
 // ------------------------------------------------------------
 const POSTS = [
   {
-    link: "#",
-    meta: { zh: "2026.09.17 · 技术实践", en: "2026.09.17 · Practice" },
-    title: { zh: "从一个想法到可运行的项目", en: "From an idea to a working project" },
-    desc: { zh: "记录项目搭建过程中的思考、选择与收获。", en: "Thoughts, choices, and lessons from building a project." },
+    link: "https://github.com/Zhuqiben/Gaze-DMS",
+    meta: { zh: "2026.09.30 · Gaze-DMS", en: "2026.09.30 · Gaze-DMS" },
+    title: { zh: "补充演示视频与训练日志", en: "Added demo video and training logs" },
+    desc: { zh: "完善训练日志、配置与评估结果，补齐演示视频，降低复现门槛。", en: "Added training logs, configs, and evaluation results plus a demo video to make reproduction easier." },
   },
 
   {
-    link: "#",
-    meta: { zh: "2026.09.10 · 学习笔记", en: "2026.09.10 · Learning" },
-    title: { zh: "如何建立自己的知识管理系统", en: "How to build your own knowledge system" },
-    desc: { zh: "让零散的学习记录真正沉淀为可复用的知识。", en: "Turning scattered notes into reusable knowledge." },
+    link: "https://github.com/Zhuqiben/Gaze-DMS",
+    meta: { zh: "2026.09.26 · Gaze-DMS", en: "2026.09.26 · Gaze-DMS" },
+    title: { zh: "开源驾驶员监控系统", en: "Open-sourced the driver monitoring system" },
+    desc: { zh: "视线估计与 YOLO 目标检测合并为完整工程，附 Tkinter 界面与训练教程。", en: "Combined gaze estimation and YOLO detection into one project, with a Tkinter UI and a training guide." },
   },
 
   {
-    link: "#",
-    meta: { zh: "2026.09.03 · 随笔", en: "2026.09.03 · Thoughts" },
-    title: { zh: "保持好奇，持续构建", en: "Stay curious, keep building" },
-    desc: { zh: "关于学习、创造，以及长期主义的一点思考。", en: "A few thoughts on learning, creating, and playing the long game." },
+    link: "https://github.com/Zhuqiben/lane_driving",
+    meta: { zh: "2026.09.17 · lane_driving", en: "2026.09.17 · lane_driving" },
+    title: { zh: "完成 ROS 2 车道线跟随功能包", en: "Completed the ROS 2 lane-following package" },
+    desc: { zh: "从相机图像检测车道线，经 PID 计算转向后下发速度指令，并补充部署文档与测试。", en: "Detects lane lines from camera images, computes steering with PID, publishes velocity commands, and ships with a deployment guide and tests." },
+  },
+];
+
+// ------------------------------------------------------------
+//  荣誉与竞赛：新增 / 排序 / hidden 规则与 PROJECTS 完全相同
+//  link 可选；省略则该项不可点击
+// ------------------------------------------------------------
+const HONORS = [
+  {
+    year: "2023",
+    title: { zh: "国际自主智能机器人大赛 · 人形机器人现实世界标准赛 · 一等奖", en: "International Autonomous Intelligent Robot Competition · Humanoid Robot Real-World Standard Track · First Prize" },
   },
 
+  {
+    year: "2022",
+    title: { zh: "国际自主智能机器人大赛 · 机器人仿真赛 · 三等奖", en: "International Autonomous Intelligent Robot Competition · Robot Simulation Track · Third Prize" },
+  },
+
+  {
+    year: "2026",
+    title: { zh: "Kaggle 竞赛铜牌 · UM - Game-Playing Strength of MCTS Variants", en: "Kaggle Competition Bronze Medal · UM - Game-Playing Strength of MCTS Variants" },
+    link: "https://www.kaggle.com/certification/competitions/qibensu/um-game-playing-strength-of-mcts-variants",
+  },
 ];

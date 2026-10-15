@@ -16,8 +16,9 @@
       <a class="brand" href="#">soo<span>.</span></a>
       <div class="nav-links">
         <a href="#about" data-i18n="nav.about">关于我</a>
-        <a href="#posts" data-i18n="nav.posts">文章</a>
+        <a href="#posts" data-i18n="nav.posts">动态</a>
         <a href="#projects" data-i18n="nav.projects">项目</a>
+        <a href="#honors" data-i18n="nav.honors">荣誉</a>
         <a href="#contact" data-i18n="nav.contact">联系</a>
       </div>
       <a class="github-link" href="https://github.com/Zhuqiben" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -32,7 +33,7 @@
         <h1 data-i18n="hero.title">用代码记录<br><span>每一次探索。</span></h1>
         <p class="hero-text" data-i18n="hero.description">你好，我是 soo，一名专注于机器人感知、计算机视觉、深度学习与嵌入式部署的开发者。这里记录我的技术实践、学习笔记和正在构建的项目。</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#posts"><span data-i18n="hero.read">阅读文章</span> <span>↓</span></a>
+          <a class="button button-primary" href="#posts"><span data-i18n="hero.read">查看动态</span> <span>↓</span></a>
           <a class="button button-secondary" href="https://github.com/Zhuqiben" target="_blank" rel="noreferrer"><span data-i18n="hero.github">查看 GitHub</span> <span>↗</span></a>
         </div>
       </div>
@@ -63,10 +64,10 @@
     <section id="posts" class="section section-muted">
       <div class="container">
         <div class="section-heading heading-row">
-          <div><p class="eyebrow">02 / NOTES</p><h2 data-i18n="posts.heading">最近文章</h2></div>
-          <a class="text-link" href="#posts" data-i18n="posts.all">查看全部文章 ↗</a>
+          <div><p class="eyebrow">02 / UPDATES</p><h2 data-i18n="posts.heading">近期动态</h2></div>
+          <a class="text-link" href="https://github.com/Zhuqiben?tab=repositories" target="_blank" rel="noreferrer" data-i18n="posts.all">在 GitHub 查看全部 ↗</a>
         </div>
-        <!-- 文章列表由 data.js 中的 POSTS 数组渲染，顺序 = 数组顺序 -->
+        <!-- 动态列表由 data.js 中的 POSTS 数组渲染，顺序 = 数组顺序 -->
         <div class="post-list" id="post-list"></div>
       </div>
     </section>
@@ -80,12 +81,27 @@
       <div class="project-grid" id="project-grid"></div>
     </section>
 
+    <section id="honors" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">04 / HONORS</p>
+          <h2 data-i18n="honors.heading">荣誉与竞赛</h2>
+        </div>
+        <!-- 荣誉列表由 data.js 中的 HONORS 数组渲染，顺序 = 数组顺序 -->
+        <ul class="honor-list" id="honor-list"></ul>
+      </div>
+    </section>
+
     <section id="contact" class="contact container">
-      <p class="eyebrow">04 / CONTACT</p>
+      <p class="eyebrow">05 / CONTACT</p>
       <h2 data-i18n="contact.heading">一起做点有趣的事？</h2>
       <p data-i18n="contact.description">如果你想交流技术、分享想法，或者一起做一个项目，欢迎联系我。</p>
-      <a class="button button-primary" href="https://github.com/Zhuqiben" target="_blank" rel="noreferrer" data-i18n="contact.button">联系我 ↗</a>
-      <p><a class="text-link" href="https://www.kaggle.com/qibensu" target="_blank" rel="noreferrer" data-i18n="contact.kaggle">访问我的 Kaggle ↗</a></p>
+      <a class="button button-primary" href="mailto:zhuqibensu@proton.me" data-i18n="contact.button">联系我 ↗</a>
+      <p>
+        <a class="text-link" href="https://github.com/Zhuqiben" target="_blank" rel="noreferrer" data-i18n="contact.github">GitHub ↗</a>
+        &nbsp;·&nbsp;
+        <a class="text-link" href="https://www.kaggle.com/qibensu" target="_blank" rel="noreferrer" data-i18n="contact.kaggle">Kaggle ↗</a>
+      </p>
     </section>
   </main>
 

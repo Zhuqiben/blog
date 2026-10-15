@@ -6,7 +6,7 @@
 
 记录技术实践，分享学习心得，持续构建有价值的作品。
 
-[访问我的博客](./index.html) · [查看项目](#精选项目) · [联系我](#联系我)
+[访问我的博客](./index.html) · [查看项目](#精选项目) · [荣誉与竞赛](#荣誉与竞赛) · [联系我](#联系我)
 
 </div>
 
@@ -35,9 +35,9 @@
 | [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | MPIIGaze 与 MPIIFaceGaze 的非官方 PyTorch 实现 | `Python` `PyTorch` |
 | [lane_driving](https://github.com/Zhuqiben/lane_driving) | 基于 ROS 2 的车道线跟随节点：相机图像 → 车道线检测 → PID 转向 → 速度指令下发 | `Python` `ROS 2` `OpenCV` |
 
-## 最近文章
+## 近期动态
 
-文章列表见博客站点的[最近文章](https://zhuqiben.github.io/blog/#posts)区域。
+动态列表见博客站点的[近期动态](https://zhuqiben.github.io/blog/#posts)区域。
 
 ## 联系我
 
