@@ -27,12 +27,36 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
+> **注意**：本仓库的 `data.js` 由上级工作空间的 `content.yaml` 通过 `tools/generate.py` 生成，
+> 请勿直接手改 —— 改动会在下次生成时被覆盖。
+
+本仓库同时是**在线简历站点**，与 GitHub 主页 [Zhuqiben/Zhuqiben](https://github.com/Zhuqiben/Zhuqiben) 共享同一份数据源，因此两处项目描述不会互相矛盾。
+
+## 内容校验
+
+```bash
+node --check data.js && node test/data.test.js
+```
+
+校验项包括：中英文双语是否齐全、链接是否为真实地址（拦截 `#` 占位符）、荣誉年份格式等。
+推送到 `main` 后由 GitHub Actions 自动执行。
+
+## 目录结构
+
+```text
+index.html          页面骨架（导航 / 首屏 / 关于 / 动态 / 项目 / 荣誉 / 联系）
+main.js             语言切换与卡片渲染（一般不需要改动）
+data.js             卡片数据（由 content.yaml 生成）
+style.css           样式
+test/data.test.js   内容校验脚本
+```
+
 ## 精选项目
 
 | 项目 | 简介 | 技术 |
 | --- | --- | --- |
 | [Gaze-DMS](https://github.com/Zhuqiben/Gaze-DMS) | 驾驶员监控系统：视线估计 + YOLO 目标检测（face / phone）+ 疲劳分心分析，含 Tkinter 界面与训练教程 | `Python` `PyTorch` `ONNX` |
-| [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | MPIIGaze 与 MPIIFaceGaze 的非官方 PyTorch 实现 | `Python` `PyTorch` |
+| [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | 基于 [hysts 上游实现](https://github.com/hysts/pytorch_mpiigaze)复现 MPIIGaze / MPIIFaceGaze 训练与评估流程（fork） | `Python` `PyTorch` |
 | [lane_driving](https://github.com/Zhuqiben/lane_driving) | 基于 ROS 2 的车道线跟随节点：相机图像 → 车道线检测 → PID 转向 → 速度指令下发 | `Python` `ROS 2` `OpenCV` |
 
 ## 近期动态
