@@ -13,13 +13,13 @@
 // 项目卡片：顺序 = content.yaml 中 projects 的顺序，编号自动生成
 const PROJECTS = [
   {
-    id: "lane-driving",
-    title: "lane_driving",
-    link: "https://github.com/Zhuqiben/lane_driving",
-    tech: "Python / ROS 2 / OpenCV",
+    id: "beacon",
+    title: "BEACON",
+    link: "https://github.com/Zhuqiben/beacon",
+    tech: "ROS 2 / Gazebo / Nav2 / Python",
     desc: {
-      zh: "基于 ROS 2 的车道线跟随节点：订阅相机图像检测黄色车道线，经 PID 计算转向后向 /controller/cmd_vel 下发速度指令。",
-      en: "A ROS 2 lane-following node: detects yellow lane lines from camera images and publishes PID-steered velocity commands to /controller/cmd_vel.",
+      zh: "ROS 2（Humble）仿真系统：TurtleBot 3 在 Gazebo 中识别彩色地标，用纯 numpy 的 EKF-SLAM 建图，再经 Nav2 自主导航到指定颜色处并避开两个游走方块；共 9 个功能包，附 pytest 与 CI。",
+      en: "A ROS 2 (Humble) simulation stack: a TurtleBot 3 detects coloured landmarks in Gazebo, builds a map with a pure-numpy EKF-SLAM filter, then drives to a requested colour with Nav2 while avoiding two roaming blocks — nine packages, with pytest and CI.",
     },
   },
 
@@ -31,6 +31,17 @@ const PROJECTS = [
     desc: {
       zh: "驾驶员监控系统：视线估计（MPIIGaze / MPIIFaceGaze）+ YOLO 目标检测（face / phone 两类）+ 疲劳分心分析（EAR / MAR），含 Tkinter 桌面界面与完整训练教程。",
       en: "A driver monitoring prototype: gaze estimation (MPIIGaze / MPIIFaceGaze) + YOLO object detection (two classes: face / phone) + fatigue and distraction analysis (EAR / MAR), with a Tkinter desktop UI and a full training guide.",
+    },
+  },
+
+  {
+    id: "lane-driving",
+    title: "lane_driving",
+    link: "https://github.com/Zhuqiben/lane_driving",
+    tech: "Python / ROS 2 / OpenCV",
+    desc: {
+      zh: "基于 ROS 2 的车道线跟随节点：订阅相机图像检测黄色车道线，经 PID 计算转向后向 /controller/cmd_vel 下发速度指令。",
+      en: "A ROS 2 lane-following node: detects yellow lane lines from camera images and publishes PID-steered velocity commands to /controller/cmd_vel.",
     },
   },
 
@@ -73,6 +84,13 @@ const PROJECTS = [
 //  不应填写未发布的内容
 // ------------------------------------------------------------
 const POSTS = [
+  {
+    link: "https://github.com/Zhuqiben/beacon",
+    meta: { zh: "2026.10.16 · BEACON", en: "2026.10.16 · BEACON" },
+    title: { zh: "开源 BEACON：ROS 2 EKF-SLAM 地标导航", en: "Open-sourced BEACON: ROS 2 EKF-SLAM landmark navigation" },
+    desc: { zh: "发布 v0.0.1：Gazebo 仿真 + 彩色地标检测 + EKF-SLAM + Nav2 导航，含随机场景生成与 CI。", en: "Released v0.0.1 with Gazebo simulation, colour landmark detection, EKF-SLAM and Nav2 navigation, plus seeded arena generation and CI." },
+  },
+
   {
     link: "https://github.com/Zhuqiben/Gaze-DMS",
     meta: { zh: "2026.09.30 · Gaze-DMS", en: "2026.09.30 · Gaze-DMS" },
