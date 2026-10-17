@@ -55,9 +55,10 @@ test/data.test.js   内容校验脚本
 
 | 项目 | 简介 | 技术 |
 | --- | --- | --- |
+| [BEACON](https://github.com/Zhuqiben/beacon) | ROS 2 仿真系统：TurtleBot 3 识别彩色地标 → EKF-SLAM 建图 → Nav2 导航到指定颜色，途中避开游走障碍物，含 pytest 与 CI | `ROS 2` `Gazebo` `Nav2` `Python` |
 | [Gaze-DMS](https://github.com/Zhuqiben/Gaze-DMS) | 驾驶员监控系统：视线估计 + YOLO 目标检测（face / phone）+ 疲劳分心分析，含 Tkinter 界面与训练教程 | `Python` `PyTorch` `ONNX` |
-| [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | 基于 [hysts 上游实现](https://github.com/hysts/pytorch_mpiigaze)复现 MPIIGaze / MPIIFaceGaze 训练与评估流程（fork） | `Python` `PyTorch` |
 | [lane_driving](https://github.com/Zhuqiben/lane_driving) | 基于 ROS 2 的车道线跟随节点：相机图像 → 车道线检测 → PID 转向 → 速度指令下发 | `Python` `ROS 2` `OpenCV` |
+| [pytorch_mpiigaze](https://github.com/Zhuqiben/pytorch_mpiigaze) | 基于 [hysts 上游实现](https://github.com/hysts/pytorch_mpiigaze)复现 MPIIGaze / MPIIFaceGaze 训练与评估流程（fork） | `Python` `PyTorch` |
 
 ## 近期动态
 
