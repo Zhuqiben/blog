@@ -44,6 +44,9 @@ node --check data.js && node test/data.test.js
 校验项包括：中英文双语是否齐全、链接是否为真实地址（拦截 `#` 占位符）、荣誉年份格式等。推送到 `main` 后由 GitHub Actions 自动执行。<br>
 The checks cover bilingual completeness, real URLs (a `#` placeholder fails the run) and honour year format. GitHub Actions runs the same command on every push to `main`.
 
+改动 `data.js` / `main.js` / `style.css` 后，请把 `index.html` 里引用这些文件的 `?v=` 值同步改成当天日期，否则浏览器可能继续使用旧缓存。GitHub Pages 对这些文件设置了十分钟缓存，带上版本号可以立即生效。<br>
+After editing `data.js`, `main.js` or `style.css`, bump the `?v=` value on their references in `index.html` to today's date. GitHub Pages caches these files for ten minutes and the version query makes the change take effect right away.
+
 ## 目录结构 · Repository layout
 
 ```text
