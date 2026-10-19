@@ -118,6 +118,12 @@ const POSTS = [
 // ------------------------------------------------------------
 const HONORS = [
   {
+    year: "2024",
+    title: { zh: "Kaggle 竞赛铜牌 · UM - Game-Playing Strength of MCTS Variants", en: "Kaggle Competition Bronze Medal · UM - Game-Playing Strength of MCTS Variants" },
+    link: "https://www.kaggle.com/certification/competitions/qibensu/um-game-playing-strength-of-mcts-variants",
+  },
+
+  {
     year: "2023",
     title: { zh: "国际自主智能机器人大赛 · 人形机器人现实世界标准赛 · 一等奖", en: "International Autonomous Intelligent Robot Competition · Humanoid Robot Real-World Standard Track · First Prize" },
   },
@@ -125,11 +131,5 @@ const HONORS = [
   {
     year: "2022",
     title: { zh: "国际自主智能机器人大赛 · 机器人仿真赛 · 三等奖", en: "International Autonomous Intelligent Robot Competition · Robot Simulation Track · Third Prize" },
-  },
-
-  {
-    year: "2024",
-    title: { zh: "Kaggle 竞赛铜牌 · UM - Game-Playing Strength of MCTS Variants", en: "Kaggle Competition Bronze Medal · UM - Game-Playing Strength of MCTS Variants" },
-    link: "https://www.kaggle.com/certification/competitions/qibensu/um-game-playing-strength-of-mcts-variants",
   },
 ];
