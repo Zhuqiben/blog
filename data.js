@@ -128,7 +128,7 @@ const HONORS = [
   },
 
   {
-    year: "2026",
+    year: "2024",
     title: { zh: "Kaggle 竞赛铜牌 · UM - Game-Playing Strength of MCTS Variants", en: "Kaggle Competition Bronze Medal · UM - Game-Playing Strength of MCTS Variants" },
     link: "https://www.kaggle.com/certification/competitions/qibensu/um-game-playing-strength-of-mcts-variants",
   },
